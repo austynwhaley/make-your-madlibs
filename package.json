@@ -1,0 +1,40 @@
+{
+  "name": "make-your-madlibs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "lint": "eslint . --ignore-pattern node_modules/*.js,*/js/,*/models/,seeders/*.js --quiet",
+    "test": "npm run lint",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thorgriffs/make-your-madlibs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thorgriffs/make-your-madlibs/issues"
+  },
+  "homepage": "https://github.com/thorgriffs/make-your-madlibs#readme",
+  "dependencies": {
+    "bad-words": "^3.0.4",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "madlibs-template-parser": "^0.1.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "prettier": "^2.2.1",
+    "sequelize": "^6.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

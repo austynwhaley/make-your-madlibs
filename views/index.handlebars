@@ -1,0 +1,19 @@
+<div data-aos="zoom-in-down" class="jumbotron">
+  <img class="img-fluid rounded mx-auto d-block " src="./images/LMlogo.png" alt="">
+</div>
+
+
+<div class="row templateRow container-fluid m-auto " style="margin-top: 7%;">
+  {{#each templates}}
+  <div class="col-md-4">
+    <div data-aos="zoom-in" class="card templateCard m-2 text-center">
+      <div class="card-body templateBody mt-3 mt-sm-5 pt-1 pt-sm-2 align-items-center my-auto">
+        <a href="/create/{{this.id}}/{{this.title}}">
+          <h3 class="card-title" style="font-weight: bold;">{{this.title}}</h5>
+        </a>
+        <p class="libTeaser mt-4">{{this.teaser}}</p>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>

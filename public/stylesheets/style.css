@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Quattrocento:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: #ef6c00;
+  background-image: url("http://michaeltruong.ca/images/upvote-bg.png");
+  background-size: 100%;
+  font-family: "Quattrocento", serif !important;
+}
+
+h3,
+h4,
+h5,
+a,
+label,
+.btn {
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  color: #ef6c00 !important;
+}
+
+.container {
+  padding-bottom: 15px;
+}
+
+.bg-light,
+.card-body,
+.jumbotron {
+  background-color: #F0F0F2!important;
+}
+
+footer {
+  color: #F2CDA0;
+  left:0;
+  bottom:0;
+  width: 100%;;
+  text-align: center;
+}
+
+.jumbotron {
+  margin-top: 5%;
+  padding-right: 5px;
+}
+
+.stories {
+  line-height: 3rem;
+}
+
+.btn {
+  margin-top: 5%;
+  background-color: #ef6c00 !important;
+  border-color: #ef6c00 !important;
+  padding-left: 15% !important;
+  padding-right: 15% !important;
+  font-size: 18px !important;
+}
+
+.btn:hover {
+  text-transform: uppercase;
+}
+
+#makeLibBtn {
+  text-align: center;
+}
+
+span {
+  font-weight: 780;
+  color: #ef6c00;
+}
+
+/* template index.handlebars styling */
+.libTeaser {
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.templateBody {
+  min-width: 90%;
+}
+
+.templateRow {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  border: 1px solid #F0F0F2;
+  border-radius: 5px;
+}
+
+.templateCard {
+  height: 250px;
+  min-width: 20px !important;
+  background-color: #F0F0F2 !important;
+}
+
+.card-title {
+  color: #ef6c00;
+}
+
+.card-title:hover {
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+/* create.handlebars styling */
+.formCol {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.wordDescription {
+  text-transform: capitalize;
+  font-weight: 780;
+  color: #ef6c00;
+}
+.wordHelperTitle {
+  font-weight: 780;
+  color: #ef6c00;
+}
+
+.helperText {
+  font-size: small;
+  font-style: italic;
+}
+
+#createTitle {
+  font-size: 1.5rem;
+}
+
+#createTitle:hover,
+#resultTitle:hover,
+#storiesTitle:hover {
+  text-transform: none !important;
+}
+
+/* stories */
+#storiesCard {
+  background-color: #F0F0F2;
+}

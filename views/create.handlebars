@@ -1,0 +1,73 @@
+<div class="row">
+  <div class="col-5 formCol">
+    <div data-aos="zoom-in-right" class="card">
+      <div class="card-body">
+        <h4 class="text-center">Need assistance?</h4>
+        <img class="rounded mx-auto d-block" src="/images/robohelper.png" alt="robo helper" height="75px" width="75px">
+
+        <h5 class="wordHelperTitle">Nouns</h5>
+        <p class="helperText">
+          Singular (e.g. boy, country, bridge, city)<br>
+          Plural (e.g. boys, countries, bridges, cities)<br>
+          Proper (e.g. Steven, Africa, London, Monday)<br>
+          Collective (e.g. family, government, audience, team, jury)
+        </p>
+
+
+        <h5 class="wordHelperTitle">Verbs</h5>
+        <p class="helperText">
+          Present participle (e.g. coming, drawing, washing)<br>
+          Third person singular (e.g. watches, shrinks, does)<br>
+          Root (e.g. go, do, show, eat)<br>
+          Simple past (e.g. sang, saw, fell, gave, went)<br>
+          Past participle (e.g. sung, seen, fallen, given, gone)<br>
+        </p>
+
+
+        <h5 class="wordHelperTitle">Adjectives</h5>
+        <p class="helperText">
+          Descriptive: describes (pro)nouns (e.g. fast, hungry, flying)<br>
+          Quantitative (e.g. twenty, three, whole)<br>
+          Proper (e.g. American, Chinese, Marxist)<br>
+        </p>
+
+        <h5 class="wordHelperTitle">Adverbs</h5>
+        <p class="helperText">
+          Time (e.g. yesterday, tomorrow, monthly, daily, recently)<br>
+          Degree (e.g. almost, enough, just, hardly)<br>
+          Frequency (e.g. always, never, seldom, normally)<br>
+          Manner (e.g. beautifully, gorgeously, patiently)<br>
+          lace (e.g. above, below, under, within)<br>
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-7 formCol">
+    <div data-aos="zoom-in-left" class="card">
+      <div class="card-body">
+        <form action="/create/{{id}}/{{title}}" method="POST" data-id="{{id}}">
+          <h5 id="createTitle">{{title}}</h5>
+          <p class="libTeaser">{{teaser}}</p>
+
+          {{#each blanks}}
+          <div class="form-group row">
+            <label for="blank-{{this.index}}" class="wordDescription col-sm-6 col-form-label">
+              {{this.variant}} {{this.category}}
+            </label>
+            <div class="col-sm-6">
+              <!-- <input name="template-{{id}}" type="hidden"> -->
+              <input id="blank-{{@index}}" name="{{@index}}" type="text" class="form-control" required>
+            </div>
+          </div>
+          {{/each}}
+          <div id="makeLibBtn">
+            <button type="submit" class="btn btn-primary" data-id="{{id}}" id="{{id}}">Make Lib</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
